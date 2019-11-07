@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<link href="Formualire Style.css" rel="stylesheet">
+
+<body>
+
+
+
+<script> 
+    document.addEventListener("change", function(event) {
+      let element = event.target;
+      if (element && element.matches(".form-element-field")) {
+        element.classList[element.value ? "add" : "remove"]("-hasvalue");
+      }
+    });</script>
+<form class="form-card">
+    <fieldset class="form-fieldset">
+        <legend class="form-legend"><font face="cooper black">Paradise Fit</font></legend>
+        <div class="form-radio form-radio-inline">
+            <div class="form-radio-legend"><font face="cooper black">Prefered Pronoun</font></div>
+            <label class="form-radio-label">
+                <input name=pronoun class="form-radio-field" type="radio" required value="He" />
+                <i class="form-radio-button"></i>
+                <span><font face="cooper black">He</font></span>
+            </label>
+            <label class="form-radio-label">
+                <input name=pronoun class="form-radio-field" type="radio" required value="She" />
+                <i class="form-radio-button"></i>
+                <span><font face="cooper black">She</font></span>
+            </label>
+        </div>
+        <div class="form-element form-input">
+            <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Please fill in your full name" type="input" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Name</label>
+        </div>
+        <div class="form-element form-input">
+            <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="You need to have more than 18" type="input" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Age</label>
+        </div>
+        <div class="form-element form-input">
+            <input id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz" class="form-element-field" placeholder=" " type="email" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz">Email</label>
+            <small class="form-element-hint">We will never spam you!</small>
+        </div>
+        <div class="form-element form-input">
+            <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="For set what you need" type="input" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Height</label>
+        </div>
+        <div class="form-element form-input">
+            <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="For set what you need" type="input" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Weight</label>
+        <div class="form-element form-select">
+            <select id="field-be1h8i-ll2hpg-q4efzm-nfjj1e-udkw5r" class="form-element-field">
+                <option disabled selected value="" class="form-select-placeholder"></option>
+                <option value="Rap">1 weeks</option>
+                <option value="Pop">2 weeks</option>
+                <option value="Rock">3 weeks</option>
+                <option value="Metal">4 weeks</option>
+            </select>
+            <div class="form-radio form-radio-inline">
+                <div class="form-radio-legend"><font face="cooper black">Programm</font></div>
+                <label class="form-radio-label">
+                    <input name=pronoun class="form-radio-field" type="radio" required value="He" />
+                    <i class="form-radio-button"></i>
+                    <span><font face="cooper black">Gold</font></span>
+                </label>
+                <label class="form-radio-label">
+                    <input name=pronoun class="form-radio-field" type="radio" required value="She" />
+                    <i class="form-radio-button"></i>
+                    <span><font face="cooper black">Diamond</font></span>
+                </label>
+            </div>
+        
+    </fieldset>
+    <div class="form-actions">
+        <button class="form-btn" type="submit">Send</button>
+        <button class="form-btn-cancel -nooutline" type="reset">Cancel</button>
+    </div>
+</form>
+</body>
